@@ -5,33 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+    
+    <title>Appointment Form</title>
 </head>
 <body>
     <div class="info">
-        <div class="title">Form</div>
+        <div class="title">Appointment Form</div>
         <div class="fields">
-          <form action="#">
+          <form action="" id="formid" >
             <div class="user">
               <div class="input">
                 <span class="details">Full Name</span>
-                <input type="text" placeholder="Enter your name" required>
+                <input name="name" type="text" placeholder="Enter your name" >
               </div>
               <div class="input">
                 <span class="details">Phone Number</span>
-                <input type="text" placeholder="Enter your number" required>
+                <input name="phone" type="tel" placeholder="Enter your number" >
               </div>
               <div class="input">
                 <span class="details">Email</span>
-                <input type="text" placeholder="Enter your email" required>
+                <input name="email" type="email" placeholder="Enter your email" >
               </div>
               <div class="input">
                 <span class="details">Problem Description</span>
-                <textarea rows="5"  type="text" placeholder="Describe the problem" required minlength="10"></textarea>
+                <textarea name="description" rows="5"  type="text" placeholder="Describe the problem" ></textarea>
               </div>
               <div class="input">
                 <span class="details">Appointment Date</span>
-                <input type="date" placeholder="Select date" required>
+                <input name="appointment" type="datetime-local" placeholder="Select date" >
               </div>
               
             </div>
@@ -56,7 +61,7 @@
               </div>
             </div>
             <div class="button">
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit" id="submit">
             </div>
             <!-- <button>
                 Clear
