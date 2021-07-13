@@ -18,18 +18,27 @@
                 <input type="text" placeholder="Enter your name" required>
               </div>
               <div class="input">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your number" required>
+              </div>
+              <div class="input">
                 <span class="details">Email</span>
                 <input type="text" placeholder="Enter your email" required>
               </div>
               <div class="input">
-                <span class="details">Phone Number</span>
-                <input type="text" placeholder="Enter your number" required>
+                <span class="details">Problem Description</span>
+                <textarea rows="5"  type="text" placeholder="Describe the problem" required minlength="10"></textarea>
               </div>
+              <div class="input">
+                <span class="details">Appointment Date</span>
+                <input type="date" placeholder="Select date" required>
+              </div>
+              
             </div>
             <div class="gender-details">
               <input type="radio" name="gender" id="dot-1">
               <input type="radio" name="gender" id="dot-2">
-              <input type="radio" name="gender" id="dot-3">
+              <input type="radio" name="gender" id="dot-3" checked="checked">
               <span class="gender-title">Gender</span>
               <div class="category">
                 <label for="dot-1">
@@ -42,16 +51,16 @@
               </label>
               <label for="dot-3">
                 <span class="dot three"></span>
-                <span class="gender">Prefer not to say</span>
+                <span class="gender"  >Prefer not to say</span>
                 </label>
               </div>
             </div>
             <div class="button">
-              <input type="submit" value="Register">
+              <input type="submit" value="Submit">
             </div>
-            <button>
+            <!-- <button>
                 Clear
-            </button>
+            </button> -->
           </form>
         </div>
       </div>     

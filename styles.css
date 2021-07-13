@@ -13,7 +13,7 @@ body{
   background: linear-gradient( #4290e9, #8dd3fc,#d9d9d9);
 }
 .info{
-  max-width: 700px;
+  max-width: 1000px;
   width: 100%;
   background-color: #fff;
   padding: 25px 30px;
@@ -35,14 +35,14 @@ body{
 }
 form .user .input{
   margin-bottom: 15px;
-  width: 100%;
+  width: 75%;
   color: #4290e9;
 }
 form .input span.details{
   display: block;
   margin-bottom: 5px;
 }
-.user .input input{
+.user .input input, .user .input textarea{
   height: 45px;
   width: 100%;
   outline: none;
@@ -54,23 +54,35 @@ form .input span.details{
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
+.user .input textarea{
+    padding-top: 10px;
+    padding-right: 10px;
+    resize: none;
+    height: 250px;
+}
+.user .input input::placeholder, .user .input textarea::placeholder{
+    font-family: sans-serif;
+}
 .user .input input:focus,
-.user .input input:valid{
+.user .input input:valid, .user .input textarea:focus, .user .input textarea:valid{
   border-color: #4290e9;
 }
+
  form .gender-details .gender-title{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
+  color: #4290e9;
  }
  form .category{
    display: flex;
-   width: 80%;
+   width: 100%;
    margin: 14px 0 ;
-   justify-content: space-between;
+   justify-content: left;
  }
  form .category label{
    display: flex;
    align-items: center;
+   padding-left: 10px;
    cursor: pointer;
  }
  form .category label .dot{
@@ -144,5 +156,4 @@ form .user-details .input-box{
   .user-details::-webkit-scrollbar{
     width: 5px;
   }
-  }
-  
+ 
