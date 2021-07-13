@@ -85,7 +85,7 @@ form .input span.details{
  #dot-1:checked ~ .category label .one,
  #dot-2:checked ~ .category label .two,
  #dot-3:checked ~ .category label .three{
-   background: #9b59b6;
+   background: #4290e9;
    border-color: #d9d9d9;
  }
  form input[type="radio"]{
@@ -106,11 +106,11 @@ form .input span.details{
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   background: linear-gradient(135deg, #71b7e6, #4290e9);
  }
  form .button input:hover{
-  /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  transform: scale(0.99); 
+  background: linear-gradient(-135deg, #71b7e6, #4290e9);
   }
  @media(max-width: 584px){
  .container{
@@ -131,8 +131,4 @@ form .user-details .input-box{
     width: 5px;
   }
   }
-  @media(max-width: 459px){
-  .container .content .category{
-    flex-direction: column;
-  }
-}
+  
