@@ -135,6 +135,12 @@ form .input span.details{
    background: #4290e9;
    border-color: #d9d9d9;
  }
+ #modaldot-1:checked ~ .category label .one,
+ #modaldot-2:checked ~ .category label .two,
+ #modaldot-3:checked ~ .category label .three{
+   background: #4290e9;
+   border-color: #d9d9d9;
+ }
  form input[type="radio"]{
    display: none;
  }
@@ -195,5 +201,5 @@ form .user-details .input-box{
     height: 250px;
     resize:none;
   }
-  
+ 
  

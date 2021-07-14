@@ -9,6 +9,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     
     <title>Appointment Form</title>
@@ -80,9 +81,72 @@
             
             <span class="dinfo" id="genderDisplay"></span>
             <div class="button">
-              <input type="submit" value="Update" id="update" name="update">
+              <input type="submit" value="Change" id="update" name="update" data-bs-toggle="modal" data-bs-target="#exampleModal">
             </div>
           </div> 
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="" id="modalformid" >
+                <div class="user">
+                  <div class="input">
+                    <span class="details">Full Name</span>
+                    <input name="name" id="modname" type="text" placeholder="Enter your name" >
+                  </div>
+                  <div class="input">
+                    <span class="details">Phone Number</span>
+                    <input name="phone" id="modnum" type="text"  placeholder="Enter your number" >
+                  </div>
+                  <div class="input">
+                    <span class="details">Email</span>
+                    <input name="email" id="modemail" type="email" placeholder="Enter your email" >
+                  </div>
+                  <div class="input">
+                    <span class="details">Problem Description</span>
+                    <textarea name="description" id="moddesc" rows="5"  type="text" placeholder="Describe the problem" ></textarea>
+                  </div>
+                  <div class="input">
+                    <span class="details">Appointment Date</span>
+                    <input name="appointment" id="moddate" type="datetime-local" placeholder="Select date" >
+                  </div>
+                  
+                </div>
+                <div class="gender-details">
+                  <input type="radio" name="gender" id="modaldot-1" value="Male">
+                  <input type="radio" name="gender" id="modaldot-2" value="Female">
+                  <input type="radio" name="gender" id="modaldot-3" value="Not Mentioned">
+                  <span class="gender-title">Gender</span>
+                  <div class="category">
+                    <label for="modaldot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                  </label>
+                  <label for="modaldot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                  </label>
+                  <label for="modaldot-3">
+                    <span class="dot three"></span>
+                    <span class="gender"  >Prefer not to say</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="button">
+                  <input type="button" id="modalsubmit" name="modalsubmit" value="Update">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>     
 </body>
