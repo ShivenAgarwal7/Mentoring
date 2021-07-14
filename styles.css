@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  height: 100vh;
+  height: 250vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +20,14 @@ body{
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
+.dinfo,.display, .display textarea{
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px #4290e9;
+}
 .info .title{
   font-size: 25px;
   font-weight: 500;
@@ -27,7 +35,7 @@ body{
   padding-bottom: 10px;
 }
 
-.content form .user{
+.content form .user, .display .dinfo, .display textarea{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -38,6 +46,7 @@ form .user .input{
   width: 75%;
   color: #4290e9;
 }
+
 form .input span.details{
   display: block;
   margin-bottom: 5px;
@@ -59,6 +68,32 @@ form .input span.details{
     padding-right: 10px;
     resize: none;
     height: 250px;
+}
+.dinfo{
+  padding-top: 10px;
+    padding-right: 10px;
+}
+
+.display .dinfo{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  color: #8dd3fc;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+}
+.display textarea{
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  color: #8dd3fc;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
 }
 .user .input input::placeholder, .user .input textarea::placeholder{
     font-family: sans-serif;
@@ -103,12 +138,12 @@ form .input span.details{
  form input[type="radio"]{
    display: none;
  }
- form .button{
+.button{
    height: 45px;
    margin: 35px 0
  }
  
- form .button input{
+ .button input{
    height: 100%;
    width: 100%;
    border-radius: 5px;
@@ -121,7 +156,7 @@ form .input span.details{
    transition: all 0.3s ease;
    background: linear-gradient(135deg, #71b7e6, #4290e9);
  }
- form button{
+ button{
     height: 45px;
     width: 100%;
     border-radius: 5px;
@@ -134,7 +169,7 @@ form .input span.details{
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #71b7e6, #4290e9);
   }
- form .button input:hover{
+ .button input:hover{
   transform: scale(0.99); 
   background: linear-gradient(-135deg, #71b7e6, #4290e9);
   }
@@ -156,4 +191,9 @@ form .user-details .input-box{
   .user-details::-webkit-scrollbar{
     width: 5px;
   }
+  .display textarea{
+    height: 250px;
+    resize:none;
+  }
+  
  
