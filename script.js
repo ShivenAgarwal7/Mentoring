@@ -42,8 +42,6 @@ $(document).ready(function(){
             required: "Please select a slot for the appointment"
           }
       }
-      
-      
     })
     $("#modalformid").validate({
       rules: {
@@ -88,12 +86,8 @@ $(document).ready(function(){
            required: "Please select a slot for the appointment"
          }
      }
-     
-     
    })
     let name,pn,email,desc,appoint,gender;
-    
-    
     $('#submit').on('click', function(e) {
       e.preventDefault;
 
@@ -111,11 +105,8 @@ $(document).ready(function(){
         }
         else{
           gender=e.currentTarget.form[7].value;
-        }
-        
+        }      
         //console.log(gender);
-        
-
         console.log($("#formid").valid());
         if($("#formid").valid()){
             //  $("#formid").hide();
@@ -129,8 +120,6 @@ $(document).ready(function(){
             $("#genderDisplay").text("Appointment Slot : "+gender);
         };
         console.log("It is submitted")
-
- 
     });
     $('#update').on('click', function(e) {
       e.preventDefault;
@@ -148,7 +137,6 @@ $(document).ready(function(){
       else{
         $('#modaldot-3').prop('checked', true);
       }
-
     });
     $('#modalsubmit').on('click', function(e) {
       e.preventDefault;
@@ -169,10 +157,7 @@ $(document).ready(function(){
       else{
         gender=e.currentTarget.form[7].value;
       }
-      
       //console.log(gender);
-      
-
       console.log($("#modalformid").valid());
       if($("#modalformid").valid()){
           //  $("#formid").hide();
@@ -185,9 +170,5 @@ $(document).ready(function(){
           $("#genderDisplay").text("Appointment Slot : "+gender);
           $('#exampleModal').modal('toggle');
       };
-      
-
     });
-    
-
 });
